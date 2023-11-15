@@ -26,7 +26,7 @@ namespace interdisciplinar
             MySqlConnection conexaoMYSQL = new MySqlConnection(conexao);
             conexaoMYSQL.Open();
 
-            MySqlDataAdapter adapter = new MySqlDataAdapter("select * from telalogin", conexaoMYSQL);
+            MySqlDataAdapter adapter = new MySqlDataAdapter("select * from novo_usuario", conexaoMYSQL);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             dgvtelalogin.DataSource = dt;

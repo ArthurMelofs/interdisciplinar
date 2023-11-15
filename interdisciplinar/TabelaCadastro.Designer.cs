@@ -38,6 +38,7 @@ namespace interdisciplinar
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             ((System.ComponentModel.ISupportInitialize)(this.dgvtelalogin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,14 +47,14 @@ namespace interdisciplinar
             this.dgvtelalogin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvtelalogin.Location = new System.Drawing.Point(12, 12);
             this.dgvtelalogin.Name = "dgvtelalogin";
-            this.dgvtelalogin.Size = new System.Drawing.Size(240, 150);
+            this.dgvtelalogin.Size = new System.Drawing.Size(776, 200);
             this.dgvtelalogin.TabIndex = 0;
             this.dgvtelalogin.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // LbUsuario
             // 
             this.LbUsuario.AutoSize = true;
-            this.LbUsuario.Location = new System.Drawing.Point(20, 194);
+            this.LbUsuario.Location = new System.Drawing.Point(300, 234);
             this.LbUsuario.Name = "LbUsuario";
             this.LbUsuario.Size = new System.Drawing.Size(43, 13);
             this.LbUsuario.TabIndex = 1;
@@ -62,7 +63,7 @@ namespace interdisciplinar
             // LbEmail
             // 
             this.LbEmail.AutoSize = true;
-            this.LbEmail.Location = new System.Drawing.Point(20, 224);
+            this.LbEmail.Location = new System.Drawing.Point(300, 264);
             this.LbEmail.Name = "LbEmail";
             this.LbEmail.Size = new System.Drawing.Size(32, 13);
             this.LbEmail.TabIndex = 2;
@@ -71,7 +72,7 @@ namespace interdisciplinar
             // LbSenha
             // 
             this.LbSenha.AutoSize = true;
-            this.LbSenha.Location = new System.Drawing.Point(20, 256);
+            this.LbSenha.Location = new System.Drawing.Point(300, 296);
             this.LbSenha.Name = "LbSenha";
             this.LbSenha.Size = new System.Drawing.Size(38, 13);
             this.LbSenha.TabIndex = 3;
@@ -79,7 +80,7 @@ namespace interdisciplinar
             // 
             // BtnAlterar
             // 
-            this.BtnAlterar.Location = new System.Drawing.Point(50, 275);
+            this.BtnAlterar.Location = new System.Drawing.Point(330, 315);
             this.BtnAlterar.Name = "BtnAlterar";
             this.BtnAlterar.Size = new System.Drawing.Size(75, 23);
             this.BtnAlterar.TabIndex = 4;
@@ -89,7 +90,7 @@ namespace interdisciplinar
             // 
             // BtnDelete
             // 
-            this.BtnDelete.Location = new System.Drawing.Point(131, 275);
+            this.BtnDelete.Location = new System.Drawing.Point(411, 315);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(75, 23);
             this.BtnDelete.TabIndex = 5;
@@ -99,7 +100,7 @@ namespace interdisciplinar
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(74, 187);
+            this.textBox1.Location = new System.Drawing.Point(354, 227);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 6;
@@ -107,7 +108,7 @@ namespace interdisciplinar
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(74, 217);
+            this.textBox2.Location = new System.Drawing.Point(354, 257);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 7;
@@ -115,11 +116,18 @@ namespace interdisciplinar
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(74, 249);
+            this.textBox3.Location = new System.Drawing.Point(354, 289);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 8;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // mySqlCommand1
+            // 
+            this.mySqlCommand1.CacheAge = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.EnableCaching = false;
+            this.mySqlCommand1.Transaction = null;
             // 
             // TabelaCadastro
             // 
@@ -154,5 +162,6 @@ namespace interdisciplinar
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
     }
 }
